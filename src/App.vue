@@ -1,23 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    
-    <Home date="Hello World" msg="Hello 2"/>
-    <About />
+  <div id="app">   
+    <TheHome date="Hello World" msg="Hello 2"/>
+    <TheAbout />
+    <DataBind />
+    <TheChild name="Anil Shidhu"/>
   </div>
 </template>
-
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Home from './components/Home.vue'
-import About from './components/About.vue'
+
+import TheHome from './components/TheHome.vue'
+import TheAbout from './components/TheAbout.vue'
+import DataBind from './components/DataBind.vue'
+import TheChild from './components/TheChild.vue'
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    Home,
-    About
+    TheHome,
+    TheAbout,
+    DataBind,
+    TheChild
   }
 }
 </script>
